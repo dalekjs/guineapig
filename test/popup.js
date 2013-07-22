@@ -6,7 +6,7 @@ module.exports = {
 
     'Can open pop up window (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .click('#open-pop-up')
             .toWindow('pop-up-window')
                 .assert.chain()
@@ -19,7 +19,7 @@ module.exports = {
 
     'Can open pop up window & go back to parent (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .click('#open-pop-up')
             .toWindow('pop-up-window')
                 .assert.text('h1', 'IFrame contents')

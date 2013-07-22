@@ -6,7 +6,7 @@ module.exports = {
 
     'Can resize window (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('#only-visible-above-500px')
             .resize({width: 320, height: 480})
             .assert.notVisible('#only-visible-above-500px')
@@ -15,7 +15,7 @@ module.exports = {
 
     'Can resize window multiple times (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .resize({width: 1280, height: 1024})
             .assert.visible('#only-visible-above-500px')
             .resize({width: 320, height: 480})

@@ -6,42 +6,42 @@ module.exports = {
 
     'Element visible (ID, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('#i_am_an_id')
             .done();
     },
 
     'Element visible (ID, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('#i_am_an_id', 'Element is visible')
             .done();
     },
 
     'Element visible (Class, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('.i_am_a_class')
             .done();
     },
 
     'Element visible (Class, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('.i_am_a_class', 'Element is visible')
             .done();
     },
 
     'Element visible (Tag, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('h1')
             .done();
     },
 
     'Element visible (Tag, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.visible('h1', 'Element is visible')
             .done();
     },
@@ -49,7 +49,7 @@ module.exports = {
     // visible, query
     'Element visible (ID, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#i_am_an_id')
             	.assert.visible()
             .end()
@@ -58,7 +58,7 @@ module.exports = {
 
     'Element visible (ID, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#i_am_an_id')
             	.assert.visible('Element is visible')
             .end()
@@ -67,7 +67,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.i_am_a_class')
             	.assert.visible()
             .end()
@@ -76,7 +76,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.i_am_a_class')
             	.assert.visible('Element is visible')
             .end()
@@ -85,7 +85,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h1')
             	.assert.visible()
             .end()
@@ -94,7 +94,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h1')
             	.assert.visible('Element is visible')
             .end()
@@ -104,7 +104,7 @@ module.exports = {
     // visible, chain
     'Element visible (ID, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('#i_am_an_id')
             .end()
@@ -113,7 +113,7 @@ module.exports = {
 
     'Element visible (ID, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('#i_am_an_id', 'Element is visible')
             .end()
@@ -122,7 +122,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('.i_am_a_class')
             .end()
@@ -131,7 +131,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('.i_am_a_class', 'Element is visible')
             .end()
@@ -140,7 +140,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('h1')
             .end()
@@ -149,7 +149,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.visible('h1', 'Element is visible')
             .end()
@@ -159,7 +159,7 @@ module.exports = {
     // visible, chain, query
     'Element visible (ID, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('#i_am_an_id')
             		.visible()
@@ -170,7 +170,7 @@ module.exports = {
 
     'Element visible (ID, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('#i_am_an_id')
             		.visible('Element is visible')
@@ -181,7 +181,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.i_am_a_class')
             		.visible()
@@ -192,7 +192,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.i_am_a_class')
             		.visible('Element is visible')
@@ -203,7 +203,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('h1')
             		.visible()
@@ -214,7 +214,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('h1')
             		.visible('Element is visible')
@@ -226,7 +226,7 @@ module.exports = {
     // visible, chain, query, inverted
     'Element visible (ID, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
         	.query('#i_am_an_id')
             	.assert.chain()
             		.visible()
@@ -237,7 +237,7 @@ module.exports = {
 
     'Element visible (ID, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
         	.query('#i_am_an_id')
             	.assert.chain()
             		.visible('Element is visible')
@@ -248,7 +248,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.i_am_a_class')
             	.assert.chain()
             		.visible()
@@ -259,7 +259,7 @@ module.exports = {
 
     'Element visible (Class, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.i_am_a_class')
             	.assert.chain()
             		.visible('Element is visible')
@@ -270,7 +270,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
         	.query('h1')
             	.assert.chain()
             		.visible()
@@ -281,7 +281,7 @@ module.exports = {
 
     'Element visible (Tag, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h1')
             	.assert.chain()
             		.visible('Element is visible')
@@ -293,42 +293,42 @@ module.exports = {
     // invisible
     'Element invisible (ID, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('#invisible-div')
             .done();
     },
 
     'Element invisible (ID, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('#invisible-div', 'Element is invisible')
             .done();
     },
 
     'Element invisible (Class, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('.jumpOkButton')
             .done();
     },
 
     'Element invisible (Class, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('.jumpOkButton', 'Element is invisible')
             .done();
     },
 
     'Element invisible (Tag, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('h4')
             .done();
     },
 
     'Element invisible (Tag, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.notVisible('h4', 'Element is invisible')
             .done();
     },
@@ -336,7 +336,7 @@ module.exports = {
     // invisible, query
     'Element invisible (ID, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#invisible-div')
             	.assert.notVisible()
             .end()
@@ -345,7 +345,7 @@ module.exports = {
 
     'Element invisible (ID, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#invisible-div')
             	.assert.notVisible('Element is invisible')
             .end()
@@ -354,7 +354,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpOkButton')
             	.assert.notVisible()
             .end()
@@ -363,7 +363,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpOkButton')
             	.assert.notVisible('Element is invisible')
             .end()
@@ -372,7 +372,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h4')
             	.assert.notVisible()
             .end()
@@ -381,7 +381,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h4')
             	.assert.notVisible('Element is invisible')
             .end()
@@ -391,7 +391,7 @@ module.exports = {
     // invisible, chain
     'Element invisible (ID, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('#invisible-div')
             .end()
@@ -400,7 +400,7 @@ module.exports = {
 
     'Element invisible (ID, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('#invisible-div', 'Element is invisible')
             .end()
@@ -409,7 +409,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('.jumpOkButton')
             .end()
@@ -418,7 +418,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('.jumpOkButton', 'Element is invisible')
             .end()
@@ -427,7 +427,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('h4')
             .end()
@@ -436,7 +436,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.notVisible('h4', 'Element is invisible')
             .end()
@@ -446,7 +446,7 @@ module.exports = {
     // invisible, chain, query
     'Element invisible (ID, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('#invisible-div')
             		.notVisible()
@@ -457,7 +457,7 @@ module.exports = {
 
     'Element invisible (ID, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('#invisible-div')
             		.notVisible('Element is invisible')
@@ -468,7 +468,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.jumpOkButton')
             		.notVisible()
@@ -479,7 +479,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.jumpOkButton')
             		.notVisible('Element is invisible')
@@ -490,7 +490,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('h4')
             		.notVisible()
@@ -501,7 +501,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('h4')
             		.notVisible('Element is invisible')
@@ -513,7 +513,7 @@ module.exports = {
     // invisible, chain, query, inverted
     'Element invisible (ID, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#invisible-div')
             	.assert.chain()
             		.notVisible()
@@ -524,7 +524,7 @@ module.exports = {
 
     'Element invisible (ID, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#invisible-div')
             	.assert.chain()
             		.notVisible('Element is invisible')
@@ -535,7 +535,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpOkButton')
             	.assert.chain()
             		.notVisible()
@@ -546,7 +546,7 @@ module.exports = {
 
     'Element invisible (Class, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpOkButton')
             	.assert.chain()
             		.notVisible('Element is invisible')
@@ -557,7 +557,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
         	.query('h4')
             	.assert.chain()
             		.notVisible()
@@ -568,7 +568,7 @@ module.exports = {
 
     'Element invisible (Tag, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('h4')
             	.assert.chain()
             		.notVisible('Element is invisible')

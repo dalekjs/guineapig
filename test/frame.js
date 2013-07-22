@@ -6,7 +6,7 @@ module.exports = {
 
     'Can get frame contents (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .toFrame('#a-frame')
             	.assert.chain()
             		.url('http://localhost:5000/iframecont.html')
@@ -18,14 +18,14 @@ module.exports = {
 
     'Can get frame contents & go back (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .toFrame('#a-frame')
                 .assert.chain()
                     .url('http://localhost:5000/iframecont.html')
                     .text('h1', 'IFrame contents')
                 .end()
             .toParent()
-            .assert.url('http://localhost:5000/index.html')
+            .assert.url('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .done();
     }
 

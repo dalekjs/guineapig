@@ -6,21 +6,21 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type', 'submit', 'Type is correct')
             .done();
     },
 
     'Element attribute (Class, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type', 'submit')
             .done();
     },
 
     'Element attribute (Class, jQuery style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type', 'submit', 'Type is correct')
             .end()
@@ -29,7 +29,7 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type', 'submit')
             .end()
@@ -38,7 +38,7 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type', 'submit', 'Type is correct')
             .end()
@@ -47,7 +47,7 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type', 'submit')
             .end()
@@ -56,7 +56,7 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.jumpButton')
 	            	.attr('type', 'submit', 'Type is correct')
@@ -67,7 +67,7 @@ module.exports = {
 
     'Element attribute (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.query('.jumpButton')
 	            	.attr('type', 'submit')
@@ -78,21 +78,21 @@ module.exports = {
 
     'Element attribute (Class, TDD style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type').is('submit', 'Type is correct')
             .done();
     },
 
     'Element attribute (Class, TDD style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type').is('submit')
             .done();
     },
 
     'Element attribute (Class, TDD style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type').is('submit', 'Type is correct')
             .end()
@@ -101,7 +101,7 @@ module.exports = {
 
     'Element attribute (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type').is('submit')
             .end()
@@ -110,7 +110,7 @@ module.exports = {
 
     'Element attribute (Class, TDD style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type').is('submit', 'Type is correct')
             .end()
@@ -119,7 +119,7 @@ module.exports = {
 
     'Element attribute (Class, TDD style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type').is('submit')
             .end()
@@ -128,7 +128,7 @@ module.exports = {
 
     'Element attribute (Class, TDD style, message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.chain()
             		.attr('type').is('submit', 'Type is correct')
@@ -139,7 +139,7 @@ module.exports = {
 
     'Element attribute (Class, TDD style, no message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.chain()
             		.attr('type').is('submit')
@@ -151,21 +151,21 @@ module.exports = {
     // negate
     'Element attribute is not (Class, TDD style, message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type').is.not('button', 'Type is not incorrect')
             .done();
     },
 
     'Element attribute is not (Class, TDD style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.attr('.jumpButton', 'type').is.not('button')
             .done();
     },
 
     'Element attribute is not (Class, TDD style, message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type').is.not('button', 'Type is not incorrect')
             .end()
@@ -174,7 +174,7 @@ module.exports = {
 
     'Element attribute is not (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .assert.chain()
             	.attr('.jumpButton', 'type').is.not('button')
             .end()
@@ -183,7 +183,7 @@ module.exports = {
 
     'Element attribute is not (Class, TDD style, message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type').is.not('button', 'Type is not incorrect')
             .end()
@@ -192,7 +192,7 @@ module.exports = {
 
     'Element attribute is not (Class, TDD style, no message, query)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.attr('type').is.not('button')
             .end()
@@ -201,7 +201,7 @@ module.exports = {
 
     'Element attribute is not (Class, TDD style, message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.chain()
             		.attr('type').is.not('button', 'Type is not incorrect')
@@ -212,7 +212,7 @@ module.exports = {
 
     'Element attribute is not (Class, TDD style, no message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('.jumpButton')
             	.assert.chain()
             		.attr('type').is.not('button')
@@ -224,10 +224,10 @@ module.exports = {
     // testing with href
     'Element attribute (href) is (ID, TDD style, no message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#top-anchor')
             	.assert.chain()
-            		.attr('href').is('http://localhost:5000/index.html#top')
+            		.attr('href').is('https://rawgithub.com/dalekjs/guineapig/master/index.html#top')
             	.end()
             .end()
             .done();
@@ -235,10 +235,10 @@ module.exports = {
 
     'Element attribute (href) is not (ID, TDD style, no message, query, chain, inverted)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .query('#top-anchor')
             	.assert.chain()
-            		.attr('href').is.not('http://localhost:5000/index.html#bottom')
+            		.attr('href').is.not('https://rawgithub.com/dalekjs/guineapig/master/index.html#bottom')
             	.end()
             .end()
             .done();

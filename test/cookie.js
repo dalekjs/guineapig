@@ -6,7 +6,7 @@ module.exports = {
 
     'Can set & read a cookie (OK, jQuery style, no message)': function (test) {
         test
-            .open('http://localhost:5000/index.html')
+            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
             .setCookie('atestcookie', 'foobar=baz')
             .assert.cookie('atestcookie', 'foobar=baz')
             .done();
