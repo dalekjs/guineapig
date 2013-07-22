@@ -1,0 +1,8 @@
+{
+  "name": "guineapig",
+  "version": "0.0.1",
+  "description": "lovely little guineapig",
+  "dependencies": {
+  	"dalekjs": "0.0.1"
+  }
+}
