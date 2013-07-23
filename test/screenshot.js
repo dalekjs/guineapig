@@ -68,7 +68,7 @@ module.exports = {
             .done();
     },
 
-    'Can generate a subdir screenshot with browser, version, timestamp, os, os version, date & datetime placeholder (OK, jQuery style, no message)': function (test) {
+    /*'Can generate a subdir screenshot with browser, version, timestamp, os, os version, date & datetime placeholder (OK, jQuery style, no message)': function (test) {
         test
             .open('http://dalekjs.com/guineapig/')
             .assert.url('http://dalekjs.com/guineapig/')
@@ -76,7 +76,7 @@ module.exports = {
             .done();
     },
 
-    /*'Can generate a subdir screenshot with browser, version, timestamp, os, os version, date, datetime & viewport placeholder (OK, jQuery style, no message)': function (test) {
+    'Can generate a subdir screenshot with browser, version, timestamp, os, os version, date, datetime & viewport placeholder (OK, jQuery style, no message)': function (test) {
         test
             .open('http://dalekjs.com/guineapig/')
             .assert.url('http://dalekjs.com/guineapig/')
