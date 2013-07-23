@@ -6,7 +6,7 @@ module.exports = {
 
     'can fill input field': function (test) {
     	test
-    		.open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+    		.open('http://dalekjs.com/guineapig/')
     		.query('#i_am_a_textbox')
     			.type('TEST')
     			.assert.attr('value', 'TEST', 'adding text to a form works')
@@ -16,7 +16,7 @@ module.exports = {
 
     'can fill a textarea field': function (test) {
     	test
-    		.open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+    		.open('http://dalekjs.com/guineapig/')
     		.query('textarea')
     			.type('I am a long text & maybe I will be converted to lorem ipsum anytime soon, but I also like the quick brown fox, tough decision')
     			.assert.attr('value', 'I am a long text & maybe I will be converted to lorem ipsum anytime soon, but I also like the quick brown fox, tough decision', 'adding text to a form works')
@@ -28,7 +28,7 @@ module.exports = {
     	var text = 'I am a long text & maybe I will be converted to lorem ipsum anytime soon, but I also like the quick brown fox, tough decision';
 
     	test
-    		.open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+    		.open('http://dalekjs.com/guineapig/')
     		.query('#fbemail')
     			.type('dalekjs@asciidisco.com')
     			.assert.attr('value', 'dalekjs@asciidisco.com', 'adding text to a form works')

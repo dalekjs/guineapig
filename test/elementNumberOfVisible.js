@@ -6,56 +6,56 @@ module.exports = {
 
     'NumberOfVisibleElements (Class, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis', 2)
             .done();
     },
 
     'NumberOfVisibleElements (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is(2)
             .done();
     },
 
     'NumberOfVisibleElements not (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.not(3)
             .done();
     },
 
     'NumberOfVisibleElements between (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.between([2, 5])
             .done();
     },
 
     'NumberOfVisibleElements gt (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.gt(1)
             .done();
     },
 
     'NumberOfVisibleElements gte (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.gte(2)
             .done();
     },
 
     'NumberOfVisibleElements lt (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.lt(5)
             .done();
     },
 
     'NumberOfVisibleElements lte (Class, TDD style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.lte(2)
             .done();
     },
@@ -63,7 +63,7 @@ module.exports = {
     // chain
     'NumberOfVisibleElements (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis', 2)
             .end()
@@ -72,7 +72,7 @@ module.exports = {
 
     'NumberOfVisibleElements (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is(2)
             .end()
@@ -81,7 +81,7 @@ module.exports = {
 
     'NumberOfVisibleElements not (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.not(3)
             .end()
@@ -90,7 +90,7 @@ module.exports = {
 
     'NumberOfVisibleElements between (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.between([2, 5])
             .end()
@@ -99,7 +99,7 @@ module.exports = {
 
     'NumberOfVisibleElements gt (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.gt(1)
             .end()
@@ -108,7 +108,7 @@ module.exports = {
 
     'NumberOfVisibleElements gte (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.gte(2)
             .end()
@@ -117,7 +117,7 @@ module.exports = {
 
     'NumberOfVisibleElements lt (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.lt(5)
             .end()
@@ -126,7 +126,7 @@ module.exports = {
 
     'NumberOfVisibleElements lte (Class, TDD style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.numberOfVisibleElements('.multi_class_vis').is.lte(2)
             .end()
@@ -136,7 +136,7 @@ module.exports = {
     // chain, query
     'NumberOfVisibleElements (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements(2)
@@ -147,7 +147,7 @@ module.exports = {
 
     'NumberOfVisibleElements (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is(2)
@@ -158,7 +158,7 @@ module.exports = {
 
     'NumberOfVisibleElements not (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.not(3)
@@ -169,7 +169,7 @@ module.exports = {
 
     'NumberOfVisibleElements between (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.between([2, 5])
@@ -180,7 +180,7 @@ module.exports = {
 
     'NumberOfVisibleElements gt (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.gt(1)
@@ -191,7 +191,7 @@ module.exports = {
 
     'NumberOfVisibleElements gte (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.gte(2)
@@ -202,7 +202,7 @@ module.exports = {
 
     'NumberOfVisibleElements lt (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.lt(5)
@@ -213,7 +213,7 @@ module.exports = {
 
     'NumberOfVisibleElements lte (Class, TDD style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.query('.multi_class_vis')
             		.numberOfVisibleElements().is.lte(2)
@@ -225,56 +225,56 @@ module.exports = {
     // message
     'NumberOfVisibleElements (Class, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis', 2, 'Is 2')
             .done();
     },
 
     'NumberOfVisibleElements (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is(2, 'Is 2')
             .done();
     },
 
     'NumberOfVisibleElements not (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.not(3, 'Is not 3')
             .done();
     },
 
     'NumberOfVisibleElements between (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.between([2, 5], 'Is between 2 & 5')
             .done();
     },
 
     'NumberOfVisibleElements gt (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.gt(1, 'Greater than 1')
             .done();
     },
 
     'NumberOfVisibleElements gte (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.gte(2, 'Greater than equal 2')
             .done();
     },
 
     'NumberOfVisibleElements lt (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.lt(5, 'Lower than 5')
             .done();
     },
 
     'NumberOfVisibleElements lte (Class, TDD style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.numberOfVisibleElements('.multi_class_vis').is.lte(2, 'Lower than equal 2')
             .done();
     }

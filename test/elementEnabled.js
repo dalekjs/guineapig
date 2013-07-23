@@ -6,14 +6,14 @@ module.exports = {
 
     'Can assert that input is disabled (OK, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.disabled('#disabled_input')
             .done();
     },
 
     'Can assert that input is not enabled (OK, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.enabled('#fbemail')
             .done();
     }

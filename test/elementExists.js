@@ -6,119 +6,119 @@ module.exports = {
 
     'Element exists (ID, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('#i_am_an_id')
             .done();
     },
 
     'Element exists (ID, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('#i_am_an_id', 'Element exists')
             .done();
     },
 
     'Single Element exists (Class, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('.i_am_a_class')
             .done();
     },
 
     'Single Element exists (Class, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('.i_am_a_class', 'Element exists')
             .done();
     },
 
     'Single Element exists (Tag, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('h1')
             .done();
     },
 
     'Single Element exists (Tag, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('h1', 'Element exists')
             .done();
     },
 
     'Multi Element exists (Class, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('.multi_class')
             .done();
     },
 
     'Multi Element exists (Class, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('.multi_class', 'Element exists')
             .done();
     },
 
     'Multi Element exists (Tag, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('div')
             .done();
     },
 
     'Multi Element exists (Tag, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.exists('div', 'Element exists')
             .done();
     },
 
     'Element exists not (ID, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('#i_am_an_non_existing_id')
             .done();
     },
 
     'Element exists not (ID, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('#i_am_an_non_existing_id', 'Element does not exist')
             .done();
     },
 
     'Element exists not (Class, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('.i_am_a_non_existing_class')
             .done();
     },
 
     'Element exists not (Class, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('.i_am_a_non_existing_class', 'Element does not exist')
             .done();
     },
 
     'Element exists not (Tag, jQuery style, no message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('h6')
             .done();
     },
 
     'Element exists not (Tag, jQuery style, message)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.doesntExist('h6', 'Element does not exist')
             .done();
     },
 
     'Element exists (ID, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('#i_am_an_id')
             .end()
@@ -127,7 +127,7 @@ module.exports = {
 
     'Element exists (ID, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('#i_am_an_id', 'Element exists')
             .end()
@@ -136,7 +136,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('.i_am_a_class')
             .end()
@@ -145,7 +145,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('.i_am_a_class', 'Element exists')
             .end()
@@ -154,7 +154,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('h1')
             .end()
@@ -163,7 +163,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('h1', 'Element exists')
             .end()
@@ -172,7 +172,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('.multi_class')
             .end()
@@ -181,7 +181,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('.multi_class', 'Element exists')
             .end()
@@ -190,7 +190,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('div')
             .end()
@@ -199,7 +199,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.exists('div', 'Element exists')
             .end()
@@ -208,7 +208,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('#i_am_an_non_existing_id')
             .end()
@@ -217,7 +217,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('#i_am_an_non_existing_id', 'Element does not exist')
             .end()
@@ -226,7 +226,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('.i_am_a_non_existing_class')
             .end()
@@ -235,7 +235,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('.i_am_a_non_existing_class', 'Element does not exist')
             .end()
@@ -244,7 +244,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, no message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('h6')
             .end()
@@ -253,7 +253,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, message, chain)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
             	.doesntExist('h6', 'Element does not exist')
             .end()
@@ -263,7 +263,7 @@ module.exports = {
     // query
     'Element exists (ID, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_id')
                 .assert.exists()
             .end()
@@ -272,7 +272,7 @@ module.exports = {
 
     'Element exists (ID, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_id')
                 .assert.exists('Element exists')
             .end()
@@ -281,7 +281,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_class')
                 .assert.exists()
             .end()
@@ -290,7 +290,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_class')
                 .assert.exists('Element exists')
             .end()
@@ -299,7 +299,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h1')
                 .assert.exists()
             .end()
@@ -308,7 +308,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h1')
                 .assert.exists('Element exists')
             .end()
@@ -317,7 +317,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.multi_class')
                 .assert.exists()
             .end()
@@ -326,7 +326,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.multi_class')
                 .assert.exists('Element exists')
             .end()
@@ -335,7 +335,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('div')
                 .assert.exists()
             .end()
@@ -344,7 +344,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('div')
                 .assert.exists('Element exists')
             .end()
@@ -353,7 +353,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_non_existing_id')
                 .assert.doesntExist()
             .end()
@@ -362,7 +362,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_non_existing_id')
                 .assert.doesntExist('Element does not exist')
             .end()
@@ -371,7 +371,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_non_existing_class')
                 .assert.doesntExist()
             .end()
@@ -380,7 +380,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_non_existing_class')
                 .assert.doesntExist('Element does not exist')
             .end()
@@ -389,7 +389,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, no message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h6')
                 .assert.doesntExist('h6')
             .end()
@@ -398,7 +398,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, message, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h6')
                 .assert.doesntExist('Element does not exist')
             .end()
@@ -407,7 +407,7 @@ module.exports = {
 
     'Element exists (ID, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('#i_am_an_id')
                     .exists()
@@ -418,7 +418,7 @@ module.exports = {
 
     'Element exists (ID, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('#i_am_an_id')
                     .exists('Element exists')
@@ -429,7 +429,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.i_am_a_class')
                     .exists()
@@ -440,7 +440,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.i_am_a_class')
                     .exists('Element exists')
@@ -451,7 +451,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('h1')
                     .exists()
@@ -462,7 +462,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('h1')
                     .exists('Element exists')
@@ -473,7 +473,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.multi_class')
                     .exists()
@@ -484,7 +484,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.multi_class')
                     .exists('Element exists')
@@ -495,7 +495,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('div')
                     .exists()
@@ -506,7 +506,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('div')
                     .exists('Element exists')
@@ -517,7 +517,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('#i_am_an_non_existing_id')
                     .doesntExist()
@@ -528,7 +528,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('#i_am_an_non_existing_id')
                     .doesntExist('Element does not exist')
@@ -539,7 +539,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.i_am_a_non_existing_class')
                     .doesntExist()
@@ -550,7 +550,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('.i_am_a_non_existing_class')
                     .doesntExist('Element does not exist')
@@ -561,7 +561,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, no message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('h6')
                     .doesntExist()
@@ -572,7 +572,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, message, chain, query)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .assert.chain()
                 .query('h6')
                     .doesntExist('Element does not exist')
@@ -584,7 +584,7 @@ module.exports = {
     // query, inverted
     'Element exists (ID, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_id')
                 .assert.chain()
                     .exists()
@@ -595,7 +595,7 @@ module.exports = {
 
     'Element exists (ID, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_id')
                 .assert.chain()
                     .exists('Element exists')
@@ -606,7 +606,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_class')
                 .assert.chain()
                     .exists()
@@ -617,7 +617,7 @@ module.exports = {
 
     'Single Element exists (Class, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_class')
                 .assert.chain()
                     .exists('Element exists')
@@ -628,7 +628,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h1')
                 .assert.chain()
                     .exists()
@@ -639,7 +639,7 @@ module.exports = {
 
     'Single Element exists (Tag, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h1')
                 .assert.chain()
                     .exists('Element exists')
@@ -650,7 +650,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.multi_class')
                 .assert.chain()
                     .exists()
@@ -661,7 +661,7 @@ module.exports = {
 
     'Multi Element exists (Class, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.multi_class')
                 .assert.chain()
                     .exists('Element exists')
@@ -672,7 +672,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('div')
                 .assert.chain()
                     .exists()
@@ -683,7 +683,7 @@ module.exports = {
 
     'Multi Element exists (Tag, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('div')
                 .assert.chain()
                     .exists('Element exists')
@@ -694,7 +694,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_non_existing_id')
                 .assert.chain()
                     .doesntExist()
@@ -705,7 +705,7 @@ module.exports = {
 
     'Element exists not (ID, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('#i_am_an_non_existing_id')
                 .assert.chain()
                     .doesntExist('Element does not exist')
@@ -716,7 +716,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_non_existing_class')
                 .assert.chain()
                     .doesntExist()
@@ -727,7 +727,7 @@ module.exports = {
 
     'Element exists not (Class, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('.i_am_a_non_existing_class')
                 .assert.chain()
                     .doesntExist('Element does not exist')
@@ -738,7 +738,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, no message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h6')
                 .assert.chain()
                     .doesntExist()
@@ -749,7 +749,7 @@ module.exports = {
 
     'Element exists not (Tag, jQuery style, message, chain, query, inverted)': function (test) {
         test
-            .open('https://rawgithub.com/dalekjs/guineapig/master/index.html')
+            .open('http://dalekjs.com/guineapig/')
             .query('h6')
                 .assert.chain()
                     .doesntExist('Element does not exist')
