@@ -9,7 +9,7 @@ module.exports = {
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
             .answer('I have a plan')
-            .acceptAlert()
+            .accept()
             .assert.text('#answer', 'I have a plan')
             .done();
     },
@@ -18,7 +18,7 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
-            .dismissAlert()
+            .dismiss()
             .assert.text('#answer', 'Nope.')
             .done();
     },
@@ -27,7 +27,7 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_alert')
-            .acceptAlert()
+            .accept()
             .done();
     },
 
@@ -35,7 +35,7 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .acceptAlert()
+            .accept()
             .assert.text('#answer', 'Yes')
             .done();
     },
@@ -44,7 +44,7 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .dismissAlert()
+            .dismiss()
             .assert.text('#answer', 'No')
             .done();
     },
@@ -53,8 +53,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_alert')
-            .assert.alertText('I am an alert')
-            .acceptAlert()
+            .assert.dialogText('I am an alert')
+            .accept()
             .done();
     },
 
@@ -62,8 +62,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
-            .assert.alertText('I am a prompt')
-            .acceptAlert()
+            .assert.dialogText('I am a prompt')
+            .accept()
             .done();
     },
 
@@ -71,8 +71,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .assert.alertText('I am a confirm')
-            .acceptAlert()
+            .assert.dialogText('I am a confirm')
+            .accept()
             .done();
     },
 
@@ -80,8 +80,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_alert')
-            .assert.alertDoesntHaveText('I am an prompt')
-            .acceptAlert()
+            .assert.dialogDoesntHaveText('I am an prompt')
+            .accept()
             .done();
     },
 
@@ -89,8 +89,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
-            .assert.alertDoesntHaveText('I am a alert')
-            .acceptAlert()
+            .assert.dialogDoesntHaveText('I am a alert')
+            .accept()
             .done();
     },
 
@@ -98,8 +98,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .assert.alertDoesntHaveText('I am a alert')
-            .acceptAlert()
+            .assert.dialogDoesntHaveText('I am a alert')
+            .accept()
             .done();
     },
 
@@ -107,8 +107,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_alert')
-            .assert.alertText().is('I am an alert')
-            .acceptAlert()
+            .assert.dialogText().is('I am an alert')
+            .accept()
             .done();
     },
 
@@ -116,8 +116,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
-            .assert.alertText().is('I am a prompt')
-            .acceptAlert()
+            .assert.dialogText().is('I am a prompt')
+            .accept()
             .done();
     },
 
@@ -125,8 +125,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .assert.alertText().is('I am a confirm')
-            .acceptAlert()
+            .assert.dialogText().is('I am a confirm')
+            .accept()
             .done();
     },
 
@@ -134,8 +134,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_alert')
-            .assert.alertText().is.not('I am an confirm')
-            .acceptAlert()
+            .assert.dialogText().is.not('I am an confirm')
+            .accept()
             .done();
     },
 
@@ -143,8 +143,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_prompt')
-            .assert.alertText().is.not('I am a alert')
-            .acceptAlert()
+            .assert.dialogText().is.not('I am a alert')
+            .accept()
             .done();
     },
 
@@ -152,8 +152,8 @@ module.exports = {
         test
             .open('http://localhost:5000/index.html')
             .click('#alert_confirm')
-            .assert.alertText().is.not('I am a alert')
-            .acceptAlert()
+            .assert.dialogText().is.not('I am a alert')
+            .accept()
             .done();
     },
 
