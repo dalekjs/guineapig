@@ -1,7 +1,6 @@
 'use strict';
 module.exports = {
 
-
     // Testsuite name
     name: 'Form - DalekJS guinea pig',
 
